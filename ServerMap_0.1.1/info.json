@@ -1,0 +1,10 @@
+{
+  "name": "ServerMap",
+  "version": "0.1.1",
+  "title": "MetalSVTs Server Map",
+  "author": "MetalSVT",
+  "contact": "irc",
+  "homepage": "na",
+  "synchronization": false,
+  "description": "A server map for Factorio."
+}
