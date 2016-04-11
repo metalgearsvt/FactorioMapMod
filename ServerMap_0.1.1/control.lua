@@ -34,6 +34,7 @@ function checkItem()
 			enName = ""
 		end
 		game.player.gui.left.tileName.caption = " Tile: " .. game.surfaces["nauvis"].get_tile(game.player.position["x"], game.player.position["y"]).name .. " --- Entity: " .. enName
+		game.write_file("test.txt", enName, true)
 	end
 
 end
