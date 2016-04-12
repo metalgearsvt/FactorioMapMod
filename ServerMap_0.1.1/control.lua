@@ -30,11 +30,11 @@ function checkItem()
 	if entityName then
 		if entityName[2] then
 			enName = entityName[2].name
+			game.write_file("ServerMap.out", math.floor(game.player.position["x"]) .. "," .. math.floor(game.player.position["y"]) .. "," .. enName .. "\n", true)
 		else
 			enName = ""
 		end
 		game.player.gui.left.tileName.caption = " Tile: " .. game.surfaces["nauvis"].get_tile(game.player.position["x"], game.player.position["y"]).name .. " --- Entity: " .. enName
-		game.write_file("test.txt", enName, true)
 	end
 
 end
